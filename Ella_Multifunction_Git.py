@@ -30,7 +30,7 @@ def send_usage_data(function_name):
 
     try:
         url = f'https://pacific-bastion-05504-99144930b98b.herokuapp.com/track_{function_name}'
-        headers = {'Authorization': 'Bearer Benjis_Secret_Key'}
+        headers = {'Authorization': 'Bearer PLACEHOLDER'}
         requests.post(url, headers=headers)
         print('Hello World!')
     except requests.exceptions.RequestException as e:
